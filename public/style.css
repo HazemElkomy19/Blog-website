@@ -1,0 +1,124 @@
+
+body {
+  background: linear-gradient(300deg, #1E0342, #0E46A3, #9AC8CD);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  margin: 0px;
+  padding: 0px; 
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+
+}
+.forrest-image{
+height: 500px;
+border-radius: 20px;
+
+box-shadow: 5px 17px 8px #1E0342;
+margin-bottom: 50px;
+}
+
+ li a{
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+} 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 130px;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  transition: filter 0.3s ease;
+}
+
+.post-item:hover {
+  filter: none;
+}
+
+.post-item:not(:hover) {
+  filter: blur(2px);
+}
+
+.post-link,
+.delete-button,
+.edit-button {
+  transition: color 0.3s ease;
+}
+
+.post-link:hover,
+.delete-button:hover,
+.edit-button:hover {
+  color: #E1F7F5; /* Replace with your desired hover color */
+}
+
+
+.formPOST-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-1 input{
+  width: 500px;
+  margin-bottom: 60px;
+}
+.container-1 label,.container-2 label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+
+
+.home-page{
+  background-color: #1E0342;
+  margin: 0px;
+  padding: 0px;
+} 
+.text-color{
+  font-family: "Public Sans", sans-serif;
+  color: #E1F7F5;
+
+}
+.header-color{
+  font-family: "Source Serif 4", serif;
+  color: #9AC8CD;
+}
+.edit-button{
+  background-color:#9AC8CD ;
+  border-style:solid;
+  border-width:none;
+}
+.edit-button:hover{
+  background-color: #9AC8CD;
+  color: #E1F7F5;
+}
+#header-posts-color{
+  font-family: "Public Sans", sans-serif;
+  color: #1E0342;
+}
+
